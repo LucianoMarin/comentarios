@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: captain;
+    src: url(../fuentes/american_captain/American\ Captain.otf);
+}
+
+
+:root{
+--fondo:#181818;
+--colorUsuario:#ffffff;
+--sizeUsuario:30px;
+--sizeAvatar:50px;
+--bordeAvatar:6px solid #adadad;
+
+}
+
+
+
+.modulo-comentarios {
+    background-color: var(--fondo);
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-shadow: 0px 0px 20px rgb(129, 130, 131);
+    border-radius: 10px;
+
+}
+
+.opciones-comentarios {
+    
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-left: 3px;
+    background-color: rgba(78, 75, 75, 0.404);
+}
+
+
+
+.cabecera {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 8px;
+    background-color: rgba(114, 114, 114, 0.397);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+
+.avatar {
+    grid-column: 1;   
+    width: var(--sizeAvatar);
+    height: var(--sizeAvatar);
+    padding: 4px;
+    border-radius: 4px;
+    border: var(--bordeAvatar);
+
+
+}
+
+.usuario {
+    grid-column: 2/4;    
+    display: flex;
+    padding-top: 20px;
+    font-size: var(--sizeUsuario);
+    font-family: captain;
+    color: var(--colorUsuario);
+
+}
+
+
+.botones{
+    height: 30px;
+    margin-left: 2px;
+    padding:8px;
+    background-color: rgb(122, 120, 120);
+    color:rgb(255, 255, 255);
+    font-family: arial;
+    text-transform: uppercase;
+    border: 0px solid rgb(160, 160, 160);
+    border-radius: 2px;
+
+}
+
+.comentario{
+    margin-left: 4px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+    border: none;
+    outline-style: none;
+    resize: none;
+    width: 97%;
+    min-height: 50px;
+    max-height: 400px;
+
+
+}
+
+
+
+.negrita{
+    font-weight: bolder;
+
+}
